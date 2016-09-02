@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="#f5f3f3">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="85dp"
+                android:layout_height="fill_parent"
+                android:gravity="center|right">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView" />
+            </LinearLayout>
+
+            <ImageButton
+                android:layout_width="228dp"
+                android:layout_height="228dp"
+                android:id="@+id/imageButton"
+                android:src="@drawable/bus"
+                android:background="#00000000" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:id="@+id/middlesection"
+        android:background="#fafcfc"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Traveller"
+                android:id="@+id/textView13"
+                android:autoText="false"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/bottomlayout"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"
+        android:paddingTop="20dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp">
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:onClick="addPassenger"
+            android:background="#363fe4" />
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="Search "
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:onClick="displayAll"
+            android:layout_weight="0.08"
+            />
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:id="@+id/button3"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:onClick="updateRecord"
+            android:background="#363fe4" />
+
+        <Button
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:id="@+id/button4"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.08"
+            android:onClick="Delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>
